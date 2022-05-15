@@ -1,0 +1,147 @@
+header {
+  height: max-content;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+header > a {
+  font-size: 1rem;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.job-title {
+  font-size: 1.3rem;
+}
+
+/* ====== CTA ====== */
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+/* ====== HEADER SOCIALS ====== */
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .8rem;
+  position: fixed;
+  left: 5rem;
+  bottom: 4rem;
+}
+
+.header__socials::after {
+  content: '';
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary)
+}
+
+/* ====== PROFILE PICTURE ====== */
+.profile {
+  margin: 0 auto;
+  width: 22rem;
+  height: min-content;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.profile::before {
+  content: '';
+  background: linear-gradient(180deg, rgba(77,181,255,1) 0%, rgba(0,0,0,0) 70%);
+  width: 350px;
+  height: 73%;
+  position: absolute;
+  z-index: -1;
+  transform: translate(-50%, 20%);
+  border-radius: 12rem 12rem 0 0;
+}
+
+.profile__img {
+  height: 300px;
+}
+
+/* ====== SCROLL DOWN & EMAIL ====== */
+.email, 
+.scroll-down {
+  position: fixed;
+}
+
+.email {
+  font-weight: 300;
+  font-size: .9rem;
+  transition: 400ms ease;
+  transform: rotate(90deg);
+  bottom: 15rem;
+  right: -1rem;
+}
+
+.email:hover {
+  font-size: .91rem;
+  transform: rotate(90deg);
+}
+
+.scroll-down {
+  bottom: 4rem;
+  right: 4.7rem;
+}
+
+/* ====== MEDIA QUERIES (MEDIUM DEVICES) ====== */
+@media screen and (max-width: 1024px) {
+  section > h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+/* ====== MEDIA QUERIES (SMALL DEVICES) ====== */
+@media screen and (max-width: 650px) {
+  header {
+    padding-top: 4rem;
+  }
+
+  .header__socials,
+  .scroll-down,
+  .email {
+    display: none;
+  }
+
+  .profile {
+    width: 300px;
+  }
+}
+
+/* ====== MEDIA QUERIES (XSMALL DEVICES) ====== */
+@media screen and (max-width: 480px) {
+  header {
+    padding-top: 3.7rem;
+  }
+
+  .header__container > h1 {
+    font-size: 1.8rem;
+  }
+
+  .header__socials,
+  .scroll-down,
+  .email {
+    display: none;
+  }
+
+  .profile {
+    width: 270px;
+  }
+
+  .btn {
+    font-size: .7rem;
+  }
+
+  .cta {
+    gap: .5rem;
+  }
+}
