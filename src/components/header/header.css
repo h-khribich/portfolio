@@ -14,10 +14,6 @@ header > a {
   position: relative;
 }
 
-.job-title {
-  font-size: 1.3rem;
-}
-
 /* ====== CTA ====== */
 .cta {
   margin-top: 2.5rem;
@@ -143,5 +139,14 @@ header > a {
 
   .cta {
     gap: .5rem;
+  }
+
+  .profile::before {
+    width: 310px;
+    height: 60%;
+    position: absolute;
+    z-index: -1;
+    transform: translate(-50%, 36%);
+    border-radius: 12rem 12rem 0 0;
   }
 }
