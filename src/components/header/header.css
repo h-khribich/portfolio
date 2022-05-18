@@ -29,7 +29,7 @@ header > a {
   align-items: center;
   gap: .8rem;
   position: fixed;
-  left: 5rem;
+  left: 1.8rem;
   bottom: 4rem;
 }
 
@@ -76,7 +76,7 @@ header > a {
   transition: 400ms ease;
   transform: rotate(90deg);
   bottom: 15rem;
-  right: -1rem;
+  right: -4rem;
 }
 
 .email:hover {
@@ -86,7 +86,7 @@ header > a {
 
 .scroll-down {
   bottom: 4rem;
-  right: 4.7rem;
+  right: 1.5rem;
 }
 
 /* ====== MEDIA QUERIES (MEDIUM DEVICES) ====== */
@@ -96,16 +96,19 @@ header > a {
   }
 }
 
-/* ====== MEDIA QUERIES (SMALL DEVICES) ====== */
-@media screen and (max-width: 650px) {
-  header {
-    padding-top: 4rem;
-  }
-
+/* ====== MEDIA QUERIES (MEDIUM DEVICES) ====== */
+@media screen and (max-width: 930px) {
   .header__socials,
   .scroll-down,
   .email {
     display: none;
+  }
+}
+
+/* ====== MEDIA QUERIES (SMALL DEVICES) ====== */
+@media screen and (max-width: 650px) {
+  header {
+    padding-top: 4rem;
   }
 
   .profile {
