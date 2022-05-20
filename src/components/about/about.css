@@ -23,7 +23,7 @@
   background: var(--color-bg-variant);
   transition: var(--transition);
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: var(--box-shadow);
 }
 
 .about__illustration:hover {
@@ -73,6 +73,7 @@
   padding: 2rem;
   text-align: center;
   transition: var(--transition);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .about__card:hover {

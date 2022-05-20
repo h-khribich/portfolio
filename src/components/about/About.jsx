@@ -39,7 +39,7 @@ const About = () => {
             </article>
           </div>
 
-          <p>Fort d'un master <strong><i>Brand Manager</i></strong> en communication et Marketing, j'ai pu rebondir dans le domaine qui me plaisait vraiment: le développement. Avec une réelle affinité pour le côté graphique du front et interactif de l'expérience utilisateur. On me décrit comme créatif, curieux et consciencieux. Je suis ouvert à une mobilité nationale ou internationale (contexte anglophone préféré).
+          <p>Fort d'un master <strong><i>Brand Manager</i></strong> en communication et marketing, j'ai pu rebondir dans le domaine qui me plaisait vraiment: le développement. Avec une réelle affinité pour le côté graphique du front et interactif de l'expérience utilisateur. On me décrit comme <i>créatif</i>, <i>curieux</i> et <i>consciencieux</i>. Je suis ouvert à une mobilité nationale ou internationale (contexte anglophone préféré).
           </p>
 
           <a href='#contact' className='btn btn-primary'>Prenez contact</a>
