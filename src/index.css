@@ -123,6 +123,11 @@ img {
   object-fit: cover;
 }
 
+.main-wrapper {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
 /* ====== MEDIA QUERIES (MEDIUM DEVICES) ====== */
 @media screen and (max-width: 1024px) {
   .container {
