@@ -7,7 +7,7 @@ import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 
 const customArrowBtn = {
   background: "transparent",
-  fontSize: "1rem",
+  fontSize: "1.3rem",
   color: "var(--color-primary-variant)",
 };
 

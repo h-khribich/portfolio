@@ -32,6 +32,10 @@
   margin: 0.8rem auto 0;
 }
 
+.slider-control-bottomcenter {
+  top: 10px;
+}
+
 /* ====== MEDIA QUERIES (MEDIUM DEVICES) ====== */
 @media screen and (max-width: 1024px) {
   .container.testimonials__container {
