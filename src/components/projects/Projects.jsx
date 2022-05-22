@@ -48,7 +48,7 @@ const Projects = () => {
           <div className="projects__item-img">
             <img src={Reservia} alt="" />
           </div>
-          <h3>Site statique de reservations de vacances avec HTML/CSS</h3>
+          <h3>Site statique de réservations de vacances avec HTML/CSS</h3>
           <div className="projects__item-cta">
             <a href='https://github.com/h-khribich/HamzaKhribich_2_10052021' className='btn' rel='noreferrer' target='_blank'>Github</a>
             <a href='https://h-khribich.github.io/HamzaKhribich_2_10052021/' className='btn btn-primary' rel='noreferrer' target='_blank'>Live demo</a>
