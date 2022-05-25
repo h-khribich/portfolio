@@ -1,12 +1,22 @@
-import React from 'react'
-import './header.css'
-import CTA from './CTA'
-import ProfilePic from '../../assets/photo_de_profil.png'
-import HeaderSocials from './HeaderSocials'
-import { BsFillArrowDownCircleFill } from 'react-icons/bs'
-import { IconContext } from 'react-icons'
+import React, { useState } from "react";
+import "./header.css";
+import CTA from "./CTA";
+import ProfilePic from "../../assets/photo_de_profil.png";
+import HeaderSocials from "./HeaderSocials";
+import { BsFillArrowDownCircleFill } from "react-icons/bs";
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { IconContext } from "react-icons";
 
 const Header = () => {
+  const [bottom, setBottom] = useState(false);
+  window.onscroll = function (ev) {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+      setBottom(true);
+    } else {
+      setBottom(false);
+    }
+  };
+
   return (
     <header>
       <div className="container header__container">
@@ -15,22 +25,36 @@ const Header = () => {
         <h5 className="text-light">Développeur Front-End</h5>
 
         <CTA />
-        <HeaderSocials />
+        <HeaderSocials bottom={bottom} />
 
         <div className="profile">
-          <img src={ProfilePic} alt="Hamza KHRIBICH" className='profile__img' />
+          <img src={ProfilePic} alt="Hamza KHRIBICH" className="profile__img" />
         </div>
 
-        
-        <a href='mailto: hamza.khribich@gmail.com' rel='noreferrer' className='email' target='_blank'>hamza.khribich@gmail.com</a>
-        <IconContext.Provider value={{ size: '1.2rem' }}>
-        <a href='#contact' className='scroll-down'>
-          <BsFillArrowDownCircleFill />
+        <a
+          href="mailto: hamza.khribich@gmail.com"
+          rel="noreferrer"
+          className={`email ${bottom ? "socials__bottom" : ""}`}
+          target="_blank"
+        >
+          hamza.khribich@gmail.com
         </a>
-      </IconContext.Provider>
+        {bottom ? (
+          <IconContext.Provider value={{ size: "1.2rem" }}>
+            <a href="#" className="scroll-down socials__bottom">
+              <BsFillArrowUpCircleFill />
+            </a>
+          </IconContext.Provider>
+        ) : (
+          <IconContext.Provider value={{ size: "1.2rem" }}>
+            <a href="#footer" className="scroll-down">
+              <BsFillArrowDownCircleFill />
+            </a>
+          </IconContext.Provider>
+        )}
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

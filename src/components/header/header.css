@@ -27,17 +27,32 @@ header > a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .8rem;
+  gap: 0.8rem;
   position: fixed;
   left: 1.8rem;
   bottom: 4rem;
 }
 
 .header__socials::after {
-  content: '';
+  content: "";
   width: 1px;
   height: 2rem;
-  background: var(--color-primary)
+  background: var(--color-primary);
+}
+
+.socials__bottom {
+  color: var(--color-bg);
+}
+
+.socials__bottom a {
+  color: var(--color-bg);
+}
+
+.socials__bottom::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-bg);
 }
 
 /* ====== PROFILE PICTURE ====== */
@@ -50,8 +65,12 @@ header > a {
 }
 
 .profile::before {
-  content: '';
-  background: linear-gradient(180deg, rgba(77,181,255,1) 0%, rgba(0,0,0,0) 70%);
+  content: "";
+  background: linear-gradient(
+    180deg,
+    rgba(77, 181, 255, 1) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
   width: 350px;
   height: 73%;
   position: absolute;
@@ -65,14 +84,14 @@ header > a {
 }
 
 /* ====== SCROLL DOWN & EMAIL ====== */
-.email, 
+.email,
 .scroll-down {
   position: fixed;
 }
 
 .email {
   font-weight: 300;
-  font-size: .9rem;
+  font-size: 0.9rem;
   transition: 400ms ease;
   transform: rotate(90deg);
   bottom: 15rem;
@@ -80,7 +99,7 @@ header > a {
 }
 
 .email:hover {
-  font-size: .91rem;
+  font-size: 0.91rem;
   transform: rotate(90deg);
 }
 
@@ -137,11 +156,11 @@ header > a {
   }
 
   .btn {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .cta {
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   .profile::before {
