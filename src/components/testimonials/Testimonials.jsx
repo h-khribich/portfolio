@@ -36,7 +36,7 @@ const Testimonials = () => {
           }}
         >
           {testimonialsData.map((item) => (
-            <article className="testimonial">
+            <article className="testimonial" key={item.name}>
               <div className="colleague__avatar">
                 <img src={item.img} alt="" />
               </div>
